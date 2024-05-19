@@ -1,0 +1,115 @@
+<html>
+  <head>
+  
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174939596-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-174939596-1');
+	</script>
+
+	<script>
+		/**
+		* Function that registers a click on an outbound link in Analytics.
+		* This function takes a valid URL string as an argument, and uses that URL string
+		* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+		* using 'navigator.sendBeacon' in browser that support it.
+		*/
+		var getOutboundLink = function(url) {
+		gtag('event', 'click', {
+		'event_category': 'outbound',
+		'event_label': url,
+		'transport_type': 'beacon',
+		'event_callback': function(){document.location = url;}
+		});
+		}
+	</script>
+
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <link rel="icon" type="image/png" href="images/paradox.png">
+
+    <title>
+      Brandon Shapiro
+    </title>
+    
+  </head>
+
+  <body>
+
+    <div id="container">
+
+      <div id="banner">
+        <h1> <a href="index.html"> Brandon Shapiro </a> </h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="research/index.html"> Research </a></li>
+          <li><a href="resources/index.html"> Exposition </a></li>
+		  <li><a href="events/index.html"> Events </a></li>
+		  <li><a href="https://blogular8.wordpress.com/" onclick="getOutboundLink('https://blogular8.wordpress.com/'); return false;"> Blog </a></li>
+        </ul>
+      </nav>
+
+      <div id="page">
+        <div id="content">
+
+	      <center>
+            <script type="text/javascript">
+              var num_img = 2;
+              var rand_num = Math.floor((Math.random()*num_img));
+              var img = new Array();
+              img[0] = '<img src="images/image0.jpg" alt="Brandon" height="300">';
+              img[1] = '<img src="images/image1.jpg" alt="Brandon" height="300">';
+              //img[0] = '<img src="images/image1.jpeg" alt="Brandon" height="300">';
+              //img[1] = '<img src="images/image2.jpeg" alt="Brandon" height="300">';
+              //img[2] = '<img src="images/image3.jpg" alt="Brandon" height="300">';
+              //img[3] = '<img src="images/image4.jpg" alt="Brandon" height="300">';
+              //img[4] = '<img src="images/image5.jpeg" alt="Brandon" height="300">';
+              //img[5] = '<img src="images/image6.jpeg" alt="Brandon" height="300">';
+              document.write(img[rand_num]);
+            </script>
+          </center>
+
+          <p>
+	          Hi! I study various forms of higher category theory, polynomial functors, and algebraic K-theory. I am also interested in homotopy type theory, combinatorial topology, and applied category theory.   
+	      </p>
+          
+	      <p>
+              Researcher at <a href="https://topos.institute/" onclick="getOutboundLink('https://topos.institute/'); return false;">Topos Institute</a>.  
+          </p>
+
+          <p>
+              I recently completed my PhD in mathematics from Cornell University, advised by <a href="http://pi.math.cornell.edu/~zakh/" onclick="getOutboundLink('http://pi.math.cornell.edu/~zakh/'); return false;">Inna Zakharevich</a>.  
+          </p>
+
+	      <p>
+	        <b> Email: </b> bts82 (at) cornell (dot) edu
+	      </p>
+
+          <p>
+            <a href="CV.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'CV'});">CV</a> (Last updated October 8, 2022)
+          </p>
+		  
+		  <p>
+		    Collaborators' webpages: <a href="https://www.mansfield.ox.ac.uk/dr-carmen-constantin" onclick="getOutboundLink('https://www.mansfield.ox.ac.uk/dr-carmen-constantin'); return false;">Carmen Constantin</a>, <a href="http://perimeterinstitute.ca/personal/tfritz/" onclick="getOutboundLink('http://perimeterinstitute.ca/personal/tfritz/'); return false;">Tobias Fritz</a>, <a href="http://www.paoloperrone.org/" onclick="getOutboundLink('http://www.paoloperrone.org/'); return false;">Paolo Perrone</a>, <a href="http://pi.math.cornell.edu/~maru/" onclick="getOutboundLink('http://pi.math.cornell.edu/~maru/'); return false;">Maru Sarazola</a>, <a href="http://www.dspivak.net/" onclick="getOutboundLink('http://www.dspivak.net/'); return false;">David Spivak</a>
+		  </p>
+
+        </div>
+      </div>
+
+    </div>
+    
+    <center>
+      <p>
+        <td ><i>Website Template by David Mehrle.</i></td>
+      </p>
+    </center>
+
+  </body>
+
+
+</html>

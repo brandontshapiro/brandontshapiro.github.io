@@ -1,0 +1,201 @@
+<html>
+  <head>
+  
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174939596-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-174939596-1');
+	</script>
+
+	<script>
+		/**
+		* Function that registers a click on an outbound link in Analytics.
+		* This function takes a valid URL string as an argument, and uses that URL string
+		* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+		* using 'navigator.sendBeacon' in browser that support it.
+		*/
+		var getOutboundLink = function(url) {
+		gtag('event', 'click', {
+		'event_category': 'outbound',
+		'event_label': url,
+		'transport_type': 'beacon',
+		'event_callback': function(){document.location = url;}
+		});
+		}
+	</script>
+
+  <link rel="stylesheet" type="text/css" href="../../style/style.css">
+
+    <title>
+      Homotopy Type Theory Reading Group
+    </title>
+  </head>
+
+  <body>
+    <div id="container">
+
+      <div id="page">
+        <div id="content">
+
+          <center>
+            <h1> Homotopy Type Theory Reading Group </h1>
+
+	   <p> This is the homepage for the Homotopy type Theory Reading Group in the Spring 2018 semester, where we keep track of the topics discussed and host notes from the Homotopy Type Theory Reading Group in the Spring 2018 semester.</p>
+	    
+            <h2> Information </h2>
+
+            <table>
+              <tbody>
+                <tr>
+                  <td><b>Meeting Time:</b></td>
+                  <td>Thursdays 3:00 - 4:15 (flexible end time)</td>
+                </tr>
+                <tr>
+                  <td><b>Meeting Place:</b></td>
+                  <td> Malott 206 </td>
+                </tr>
+              </tbody>
+            </table>
+
+	    <h2> Resources </h2>
+
+	    <table>
+	      <thead align="left">
+          </thead>
+	      <tbody>
+		<tr>
+		  <td> Homotopy Type Theory (The Book) </td>
+		  <td> <a href="https://homotopytypetheory.org/book/" onclick="getOutboundLink('https://homotopytypetheory.org/book/'); return false;">[Link]</a> </td>
+		</tr>
+		<tr>
+		  <td> Intuitionistic Type Theory (Martin-L&ouml;f) </td>
+		  <td> <a href="http://www.cse.chalmers.se/~peterd/papers/MartinL%C3%B6f1984.pdf" onclick="getOutboundLink('http://www.cse.chalmers.se/~peterd/papers/MartinL%C3%B6f1984.pdf'); return false;">[Link]</a> </td>
+		</tr>
+		<tr>
+		  <td> Foundations of Constructive Mathematics (Beeson) </td>
+		  <td> <a href="https://newcatalog.library.cornell.edu/catalog/10123886" onclick="getOutboundLink('https://newcatalog.library.cornell.edu/catalog/10123886'); return false;">[Link]</a> </td>
+		</tr>
+		<tr>
+		  <td> Categorical Logic and Type Theory (Bart) </td>
+		  <td> <a href="https://newcatalog.library.cornell.edu/catalog/9344438" onclick="getOutboundLink('https://newcatalog.library.cornell.edu/catalog/9344438'); return false;">[Link]</a> </td>
+		</tr>
+		<tr>
+		  <td> An Introduction to Univalent Foundations for Mathematicians (Grayson) </td>
+		  <td> <a href="https://arxiv.org/pdf/1711.01477.pdf" onclick="getOutboundLink('https://arxiv.org/pdf/1711.01477.pdf'); return false;">[Link]</a> </td>
+		</tr>
+		<tr>
+		  <td> Homotopy Type Theory Electronic Seminar (Open to all!) </td>
+		  <td> <a href="http://uwo.ca/math/faculty/kapulkin/seminars/hottest.html" onclick="getOutboundLink('http://uwo.ca/math/faculty/kapulkin/seminars/hottest.html'); return false;">[Link]</a> </td>
+		</tr>
+		    </tbody>
+	    </table>
+       
+          <h2> Schedule </h2> 
+
+            <table>
+              <thead align="left">
+                <th>Date</th>
+                <th>Topic</th>
+                <th>Speaker</th>
+                <th>Reference</th>
+                <th></th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td> 25 January </td>
+                  <td> Organization</td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                </tr> 
+               <tr>
+                  <td> 1 February </td>
+		          <td> Type Theory </td>
+                  <td> Andrew </td>
+                  <td> <a href="notes/type-theory-outline.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'type-theory-outline'});"> Notes </a> </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td> 8 February </td>
+		          <td> Homotopy Theory </td>
+                  <td> Brandon </td>
+                  <td> <a href="notes/HomotopyNotes.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'homotopy-primer-notes'});"> Notes </a> </td>
+                  <td> </td>
+                </tr> 
+                <tr>
+                  <td> 15 February </td>
+		          <td> Identity Types </td>
+                  <td> Daoji </td>
+                  <td> Book 1.12, 2.1</td>
+                  <td> </td>
+                </tr> 
+                <tr>
+                  <td> 22 February </td>
+		          <td> Path Lifting, Equivalences</td>
+                  <td> Michael </td>
+                  <td> Book 2.2-2.4</td>
+                  <td> </td>
+                </tr> 
+                <tr>
+                  <td> 1 March </td>
+		          <td> Categorical Fibrations </td>
+                  <td> Andrew </td>
+                  <td> <a href="notes/fibration-outline.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'fibration-outline'});"> Notes </a> </td>
+                  <td> </td>
+                </tr> 
+                <tr>
+                  <td> 8 March </td>
+		          <td> Higher Groupoid Structure </td>
+                  <td> Michael </td>
+                  <td> Book 2.7, 2.10, 2.12 </td>
+                  <td> </td>
+                </tr> 
+            </table>
+
+	    <h2> Potential Future Topics </h2>
+
+	    <table>
+	      <thead>
+		<th> </th>
+	      </thead>
+	      <tbody>
+		<tr>
+		  <td>Univalence, Function Extensionality</td>
+		</tr>
+		<tr>
+		  <td>Equivalences</td>
+		</tr>
+		<tr>
+		  <td>Higher Inductive Types</td>
+		</tr>
+		<tr>
+		  <td>Models (like simplicial, cubical,...)</td>
+		</tr>
+	    <tr>
+		  <td>Logic, Foundations, Philosophy</td>
+		</tr>
+	    <tr>
+		  <td>Topos Theory</td>
+		</tr>
+	      </tbody>
+	    </table>
+          </center>
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <center>
+      <p>
+        <td ><i>Website Template by David Mehrle.</i></td>
+      </p>
+    </center>
+
+  </body>
+
+</html>

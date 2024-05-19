@@ -1,0 +1,154 @@
+<html>
+  <head>
+  
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174939596-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-174939596-1');
+	</script>
+
+	<script>
+		/**
+		* Function that registers a click on an outbound link in Analytics.
+		* This function takes a valid URL string as an argument, and uses that URL string
+		* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+		* using 'navigator.sendBeacon' in browser that support it.
+		*/
+		var getOutboundLink = function(url) {
+		gtag('event', 'click', {
+		'event_category': 'outbound',
+		'event_label': url,
+		'transport_type': 'beacon',
+		'event_callback': function(){document.location = url;}
+		});
+		}
+	</script>
+
+  <link rel="stylesheet" type="text/css" href="../../style/style.css">
+
+    <title>
+      Homotopy Group Spring 2019
+    </title>
+  </head>
+
+  <body>
+    <div id="container">
+
+      <div id="page">
+        <div id="content">
+
+          <center>
+            <h1> Homotopy Group Student Seminar </h1>
+
+	   <p> This webpage is to maintain the schedule for our student seminar focused on topics in homotopy theory for the Spring 2019 semester.  The format is to alternate giving a series of 2-3 talks, with the first intended as an approachable introduction to the speaker's chosen topic. </p>
+	    
+            <h2> Information </h2>
+
+            <table>
+              <tbody>
+                <tr>
+                  <td><b>Meeting Time:</b></td>
+                  <td>Wednesdays 2:00-3:00</td>
+                </tr>
+                <tr>
+                  <td><b>Meeting Place:</b></td>
+		  <td> Malott 206 </td>
+                </tr>
+              </tbody>
+            </table>
+
+	    <h2> Schedule </h2> 
+
+            <table>
+              <thead align="left">
+                <th>Date</th>
+                <th>Topic</th>
+                <th>Speaker</th>
+                <th>Notes</th>
+		<th> </th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td> 30 January </td>
+		  <td> Nerves of Higher Categories </td>
+		  <td> Brandon Shapiro </td>
+		  <td> <a href="notes/nerves.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'nerves-higher-cats'});">Notes</a> </td>
+                </tr> 
+               <tr>
+                  <td> 6 February </td>
+		  <td> Nerves of Higher Categories </td>
+		  <td> Brandon Shapiro </td>
+		  <td></td>
+                </tr>
+                <tr>
+                  <td> 13 February </td>
+		  <td> Cotorsion Pairs and Abelian Model Categories </td>
+		  <td> Maru Sarazola </td>
+		  <td> <a href="notes/cotorsion_model_waldh.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'cotorsion-pairs'});">Notes</a> </td>
+                </tr> 
+                <tr>
+		          <td> 20 February </td>
+		  <td> Cotorsion Pairs and Waldhausen Categories </td>
+		  <td> Maru Sarazola </td>
+		  <td> </td>
+                </tr> 
+                <tr>
+		          <td> 6 March </td>
+		  <td> Categories of Fibrant Objects </td>
+		  <td> Yun Liu </td>
+		  <td> <a href="notes/fibrants.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'Yun-fibrants'});">Notes</a> </td>
+                </tr> 
+                <tr>
+                  <td> 13 March </td>
+		  <td> Categories of Cofibrant Objects </td>
+		  <td> Yun Liu </td>
+		  <td> <a href="notes/cofibrants.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'Yun-cofibrants'});">Notes</a> </td>
+                </tr> 
+                <tr>
+		  <td> 20 March </td>
+		  <td> Triangulated Categories </td>
+		  <td> Kimoi Kemboi </td>
+		  <td> </td>
+                </tr> 
+                <tr>
+		  <td> 27 March </td>
+		  <td> Stable Infinity Categories </td>
+		  <td> Kimoi Kemboi </td>
+		  <td> </td>
+                </tr> 
+                <tr>
+		  <td> 10 April </td>
+		  <td> Realizing Eilenberg MacLane Spectra as Thom Spectra </td>
+		  <td> David Mehrle </td>
+		  <td> <a href="notes/david1.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'David-spectra-1'});">Notes</a> </td>
+                </tr> 
+                <tr>
+		  <td> 17 April </td>
+		  <td> Realizing Eilenberg MacLane Spectra as Thom Spectra </td>
+		  <td> David Mehrle </td>
+		  <td> <a href="notes/david2.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'David-spectra-2'});">Notes</a> </td>
+                </tr> 
+                <tr>
+		  <td> 24 April </td>
+		  <td> Topological Modular Forms </td>
+		  <td> Brandon Shapiro </td>
+		  <td> </td>
+                </tr> 
+            </table>
+
+	    </div>
+      </div>
+    </div>
+    
+    <center>
+      <p>
+        <td ><i>Website Template by David Mehrle.</i></td>
+      </p>
+    </center>
+
+  </body>
+
+</html>

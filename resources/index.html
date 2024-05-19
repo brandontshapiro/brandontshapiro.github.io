@@ -1,0 +1,181 @@
+<html>
+  <head>
+  
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174939596-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-174939596-1');
+	</script>
+
+	<script>
+		/**
+		* Function that registers a click on an outbound link in Analytics.
+		* This function takes a valid URL string as an argument, and uses that URL string
+		* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+		* using 'navigator.sendBeacon' in browser that support it.
+		*/
+		var getOutboundLink = function(url) {
+		gtag('event', 'click', {
+		'event_category': 'outbound',
+		'event_label': url,
+		'transport_type': 'beacon',
+		'event_callback': function(){document.location = url;}
+		});
+		}
+	</script>
+
+  <link rel="stylesheet" type="text/css" href="../style/style.css">
+  <link rel="icon" type="image/png" href="../images/paradox.png">
+
+    <title>
+      Exposition
+    </title>
+    
+  </head>
+
+  <body>
+
+    <div id="container">
+
+      <div id="banner">
+        <h1> <a href="../index.html"> Brandon Shapiro </a> | Exposition </h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="../index.html">About</a></li>
+          <li><a href="../research/index.html"> Research </a></li>
+          <li><a href="../resources/index.html"> Exposition </a></li>
+          <li><a href="../events/index.html"> Events </a></li>
+		  <li><a href="https://blogular8.wordpress.com/" onclick="getOutboundLink('https://blogular8.wordpress.com/'); return false;"> Blog </a></li>
+        </ul>
+      </nav>
+
+      <div id="page">
+        <div id="content">
+
+	      <p>
+            This page is for expository notes, slides, and papers. Most of these materials cover topics I am interested in researching, sometimes from a non-standard perspective, but are not based on original work. 
+          </p>  
+          
+          <h2> Slides </h2>
+
+	      <ul>
+			<li> Test Category Structure of Cube Categories.
+              <a href="https://www.msri.org/seminars/25042" onclick="getOutboundLink('https://www.msri.org/seminars/25042'); return false;"> Cubical Sets Seminar</a>, MSRI, May 2020.
+	          <a href="slides/cubes-test-notes.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'test-categories-cubes-notes'});">[Slides]</a>
+            </li>
+		  
+	        </br>
+			
+            <li> Types as Weak Omega-Groupoids.
+              School and Workshop on Univalent Foundations, April 2019.
+	          <a href="slides/typegroupoids.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'types-as-omega-groupoids-slides'});">[Slides]</a>
+            </li>
+		  
+	        </br>
+			
+            <li> Comparing Shapes for Higher Structures.
+              Young Topologists Meeting, July 2018.
+	          <a href="slides/CellShape.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'comparing-shapes-notes'});">[Slides]</a>
+            </li>
+
+            </br>
+			
+            <li> Topological Data Analysis.
+              Indian Institute of Science, April 2016.
+	          <a href="slides/DataAnalysis.pptx" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'tda-slides'});">[Slides]</a>
+            </li>
+
+            </br>
+			
+            <li> Category Theory and Functional Data Abstraction.
+	          Brandeis University, May 2015.
+	          <a href="slides/CategoriesPresentation.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'functional-data-slides'});">[Slides]</a>
+	        </li>
+          </ul>
+          
+          <h2> Notes </h2>
+
+	      <ul>
+		    <li> A Brief Tour of Homotopy Type Theory. Cornell Logic Seminar, Spring 2020.
+			  <a href="notes/hottlogic.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'logic-hott-notes'});">[PDF]</a>
+			</li>
+		  
+	        </br>
+			
+            <li> Simple Homotopy Theory and K1. Fall 2019.
+			  <a href="notes/SimpleHomotopyK1.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'simple-homotopy-notes'});">[PDF]</a>
+			</li>
+		  
+	        </br>
+			
+            <li> Topological Modular Forms. Spring 2019.
+			  <a href="notes/tmf.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'tmf-writeup'});">[PDF]</a>
+			</li>
+		  
+	        </br>
+			
+            <li> Nerves of Higher Categories. Homotopy Group Student Seminar, Spring 2019.
+	          <a href="notes/nerves.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'nerves-higher-cats'});">[PDF]</a>
+	        </li>
+
+	        </br>
+			
+            <li> Homotopy Theory Primer for Type Theory. Homotopy Type Theory Reading Group, Spring 2018.
+	          <a href="notes/HomotopyNotes.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'homotopy-primer-notes'});">[PDF]</a>
+	        </li>
+
+	        </br>
+			
+            <li> Operations Arising from Equivariant K-theory of the Symmetric Group. Fall 2017.
+	          <a href="notes/EquivariantKTheory.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'equivariant-k-theory-notes'});">[PDF]</a>
+	        </li>
+
+	        </br>
+			
+            <li> Summary of Intro Topology and Special Topics. Fall 2015.
+	          <a href="notes/TopologySummary.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'intro-topology-summary'});">[PDF]</a>
+            </li>
+		  </ul>
+          
+          <h2> Course Papers </h2>
+
+          <ul>
+            <li> Representability of Homotopy Groups in Type Theory. Cornell University, Fall 2017.
+	          <a href="papers/RepresentabilityHoTT.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'representability-hott-paper'});">[PDF]</a>
+	        </li>
+
+	        </br>
+			
+            <li> A Pointless Topological Equivalence. Brandeis University, Fall 2015.
+	          <a href="papers/PointlessTopology.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'pointless-topology-paper'});">[PDF]</a>
+	        </li>
+
+	        </br>
+			
+            <li> Category Theory and Functional Data Abstraction.  Brandeis University, Spring 2015.
+	          <a href="papers/CategoryTheory.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'functional-data-paper'});">[PDF]</a>
+	        </li>
+          </ul>
+
+          </br></br>
+	  
+        </div>
+      </div>
+
+    </div>
+
+    <center>
+      <p>
+        <td ><i>Website Template by David Mehrle.</i></td>
+      </p>
+    </center>
+
+  </body>
+
+
+</html>

@@ -1,0 +1,297 @@
+<html>
+  <head>
+  
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174939596-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-174939596-1');
+	</script>
+	
+	<script>
+		/**
+		* Function that registers a click on an outbound link in Analytics.
+		* This function takes a valid URL string as an argument, and uses that URL string
+		* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+		* using 'navigator.sendBeacon' in browser that support it.
+		*/
+		var getOutboundLink = function(url) {
+		gtag('event', 'click', {
+		'event_category': 'outbound',
+		'event_label': url,
+		'transport_type': 'beacon',
+		'event_callback': function(){document.location = url;}
+		});
+		}
+	</script>
+
+  <link rel="stylesheet" type="text/css" href="../style/style.css">
+  <link rel="icon" type="image/png" href="../images/paradox.png">
+
+    <title>
+      Research
+    </title>
+    
+  </head>
+
+  <body>
+
+    <div id="container">
+
+      <div id="banner">
+        <h1> <a href="../index.html"> Brandon Shapiro </a> | Research </h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="../index.html">About</a></li>
+          <li><a href="../research/index.html"> Research </a></li>
+          <li><a href="../resources/index.html"> Exposition </a></li>
+          <li><a href="../events/index.html"> Events </a></li>
+		  <li><a href="https://blogular8.wordpress.com/" onclick="getOutboundLink('https://blogular8.wordpress.com/'); return false;"> Blog </a></li>
+        </ul>
+      </nav>
+
+      <div id="page">
+        <div id="content">
+
+	      <p>
+            I am interested in many different kinds of higher categorical structures and how they relate to each other, and use the language of polynomial functors to describe common constructions across the various flavors of higher categories. When I say "higher categories" I mean any structure involving collections of cells in various shapes and algebraic operations for composing certain arrangements of those cells into a single cell. For instance, n-categories are algebraic structures on n-globular sets, and n-tuple categories are algebraic structures on diagrams of cubical cells which keep track of the different directions. So far, I have generalized enrichment of categories to any such higher category.
+		  </p>
+			
+		  <!--<p>
+			In infinite dimensions, these algebraic structures can be modeled as a homotopy theory for diagrams over certain more complicated categories, like &Theta;<sub>n</sub> or products of &Delta;. My work focuses on classifying these models and establishing analogues of features of ordinary category theory (such as enrichment) for higher category theories with more general cell shapes.
+		  </p>-->
+		  
+		  <p>
+		    Polynomial endofunctors on the category of sets provide a rich language for describing phenomena in both category theory and real-world applications. Polynomial coalgebras model "open" dynamical systems, where the state of the system updates based on external input. Enrichment in a double category of polynomial coalgebras can be used to describe nested hierarchies of interacting dynamical systems, including examples from machine learning, strategic game theory, and prediction markets. Polynomial functors on the category of categories have even further potential to elegantly model structures in topology, continuous dynamics, and the theory of double categories. 
+		  </p>
+			
+		  <p>	
+			Algebraic K-theory describes how various types of objects are built up out of smaller pieces, where "smaller" is tracked by certain morphisms in a category. My work builds on an <a href="https://arxiv.org/abs/1811.08014" onclick="getOutboundLink('https://arxiv.org/abs/1811.08014'); return false;"><strong>axiomatic framework</strong></a> for K-theory which uses double categories to model objects with two different ways of mapping a smaller object to a bigger one. This approach generalizes classical theorems of K-theory to non-abelian settings, such as varieties and finite sets, where chain complex models of K-theory have yet to be fully explored. 
+		  </p>
+		  
+		  <!--<p>
+			I am also interested in using techniques from homotopy theory to describe computational properties of algebraic structures. For instance, in the theory of monoids, a formal expression like 1+2+3 "partially evaluates" to either 3+3 or 1+5 before reaching its "total evaluation" 6. These partial evaluations can be treated like directed paths in a space of such formal expressions in a monoid. Properties of both the theory of monoids and a particular monoid are encoded in properties of these computation spaces, which exhibit interesting and surprisingly common features of simplicial sets. 
+		  </p> -->
+
+		  <!--<p>
+            As an undergrad I did research projects in polyhedral decompositions of manifolds, hyperbolic knot theory, formal languages for concurrent processes, and computational astrophysics of plasma jets and supernova neutrinos.
+          </p>  -->
+		  
+		  <h2> Papers </h2>
+
+          <ul>
+            <li> Duoidal Structures for Compositional Dependence. Joint with <a href="http://www.dspivak.net/" onclick="getOutboundLink('http://www.dspivak.net/'); return false;">David Spivak</a>. 
+	          
+	          <a href="papers/spacetime.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'spacetime'});">[PDF]</a>
+	          <a href="https://arxiv.org/abs/2210.01962" onclick="getOutboundLink('https://arxiv.org/abs/2210.01962'); return false;">[arXiv]</a>
+	        </li>
+			
+			</br>
+			
+            <li> Dynamic Operads, Dynamic Categories: From Deep Learning to Prediction Markets. Joint with <a href="http://www.dspivak.net/" onclick="getOutboundLink('http://www.dspivak.net/'); return false;">David Spivak</a>. <i>Applied Category Theory 2022</i>.
+	          
+	          <a href="papers/adaptives.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'adaptives'});">[PDF]</a>
+	          <a href="https://arxiv.org/abs/2205.03906" onclick="getOutboundLink('https://arxiv.org/abs/2205.03906'); return false;">[arXiv]</a>
+	        </li>
+			
+			</br>
+			
+            <li> Enrichment of Algebraic Higher Categories.
+	          
+	          <a href="papers/enrichment.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'enrichment'});">[PDF]</a>
+	          <a href="https://arxiv.org/abs/2205.12235" onclick="getOutboundLink('https://arxiv.org/abs/2205.12235'); return false;">[arXiv]</a>
+	        </li>
+			
+			</br>
+			
+            <li> Familial Monads as Higher Category Theories. 
+	          
+	          <a href="papers/familial.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'familial'});">[PDF]</a>
+	          <a href="https://arxiv.org/abs/2111.14796" onclick="getOutboundLink('https://arxiv.org/abs/2111.14796'); return false;">[arXiv]</a>
+	        </li>
+			
+			</br>
+			
+            <li> A Gillet-Waldhausen Theorem for chain complexes of sets. Joint with <a href="http://pi.math.cornell.edu/~maru/" onclick="getOutboundLink('http://pi.math.cornell.edu/~maru/'); return false;">Maru Sarazola</a>.
+	          
+	          <a href="papers/chain_complexes.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'chain-complexes'});">[PDF]</a>
+	          <a href="https://arxiv.org/abs/2107.07701" onclick="getOutboundLink('https://arxiv.org/abs/2107.07701'); return false;">[arXiv]</a>
+	        </li>
+			
+			</br>
+			
+            <li> Partial evaluations and the compositional structure of the bar construction. Joint with <a href="https://www.mansfield.ox.ac.uk/dr-carmen-constantin" onclick="getOutboundLink('https://www.mansfield.ox.ac.uk/dr-carmen-constantin'); return false;">Carmen Constantin</a>, <a href="http://perimeterinstitute.ca/personal/tfritz/" onclick="getOutboundLink('http://perimeterinstitute.ca/personal/tfritz/'); return false;">Tobias Fritz</a>, <a href="http://www.paoloperrone.org/" onclick="getOutboundLink('http://www.paoloperrone.org/'); return false;"> and Paolo Perrone</a>.
+	          
+	          <a href="papers/bar_constructions.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'bar_constructions'});">[PDF]</a>
+	          <a href="https://arxiv.org/abs/2009.07302" onclick="getOutboundLink('https://arxiv.org/abs/2009.07302'); return false;">[arXiv]</a>
+	        </li>
+			
+            </br>
+			
+            <li> Weak cartesian properties of simplicial sets. Joint with <a href="https://www.mansfield.ox.ac.uk/dr-carmen-constantin" onclick="getOutboundLink('https://www.mansfield.ox.ac.uk/dr-carmen-constantin'); return false;">Carmen Constantin</a>, <a href="http://perimeterinstitute.ca/personal/tfritz/" onclick="getOutboundLink('http://perimeterinstitute.ca/personal/tfritz/'); return false;">Tobias Fritz</a>, <a href="http://www.paoloperrone.org/" onclick="getOutboundLink('http://www.paoloperrone.org/'); return false;"> and Paolo Perrone</a>.
+	          
+	          <a href="papers/delta_squares.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'delta-squares'});">[PDF]</a>
+	          <a href="https://arxiv.org/abs/2105.04775" onclick="getOutboundLink('https://arxiv.org/abs/2105.04775'); return false;">[arXiv]</a>
+	        </li>
+			
+          </ul>
+		  
+		  <h2> Thesis </h2>
+		  
+		  <ul>
+		    <li> <i>Shape Independent Category Theory.</i> 
+			
+			<a href="papers/thesis.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'thesis'});">[PDF]</a>
+	          
+			  
+		    </li>
+		  </ul>
+		  
+		  <h2> Blog Posts </h2>
+		  
+		  <ul>
+		    <li> A Dynamic Monoidal Category for Strategic Games. <a href="https://topos.site/blog/2022/09/a-dynamic-monoidal-category-for-strategic-games/" onclick="getOutboundLink('https://topos.site/blog/2022/09/a-dynamic-monoidal-category-for-strategic-games/'); return false;">[Post]</a>
+			  
+		    </li>
+		  </ul>
+		  
+		  <h2> Talks </h2>
+
+	      <ul>
+			<li> Dynamic Operads for Evolving Organizations. <a href="https://msp.cis.strath.ac.uk/act2022/" onclick="getOutboundLink('https://msp.cis.strath.ac.uk/act2022/'); return false;">Applied Category Theory 2022</a>, July 2022.
+	          <a href="slides/act22.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'act22'});">[Animated Slides]</a> <a href="slides/act22-reduced.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'act22-reduced'});">[Less Animated Slides]</a>
+            </li>
+		  
+	        </br>
+			
+            <li> Familial Monads for Higher and Lower Category Theory. <a href="https://topos.site/p-func-workshop/" onclick="getOutboundLink('https://topos.site/p-func-workshop/'); return false;">Workshop on Polynomial Functors</a>, March 2022.
+	          <a href="slides/polyfun.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'polyfun'});">[Animated Slides]</a> <a href="slides/polyfun-reduced.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'polyfun-reduced'});">[Less Animated Slides]</a>
+            </li>
+		  
+	        </br>
+			
+            <li> Compositional Structure of Partial Evaluations. <a href="http://web.science.mq.edu.au/groups/coact/seminar/CaCS2021/" onclick="getOutboundLink('http://web.science.mq.edu.au/groups/coact/seminar/CaCS2021/'); return false;">Categories and Companions Symposium</a>, June 2021.
+	          <a href="slides/companions.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'companions-partial-evaluations'});">[Animated Slides]</a> <a href="slides/companions-reduced.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'companions-partial-evaluations-reduced'});">[Less Animated Slides]</a>
+            </li>
+		  
+	        </br>
+			
+            <li> Compositional Structure of Partial Evaluations. <a href="http://brendanfong.com/seminar.html" onclick="getOutboundLink('http://brendanfong.com/seminar.html'); return false;">MIT Category Seminar</a>, September 2020.
+	          <a href="slides/partial-evaluations.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'partial-evaluations'});">[Animated Slides]</a> <a href="slides/partial-evaluations-reduced.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'partial-evaluations-reduced'});">[Less Animated Slides]</a>
+            </li>
+		  
+	        </br>
+			
+            <li> Cubical omega-Categories and Cubical Theta.
+              <a href="https://www.msri.org/seminars/25037" onclick="getOutboundLink('https://www.msri.org/seminars/25037'); return false;"> Cubical Sets Seminar</a>, MSRI, May 2020.
+	          <a href="slides/cubes-theta-notes.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'cubes-theta-notes'});">[Slides]</a>
+            </li>
+
+        	</br>
+			
+            <li> Constructing Cubes from Semicubes.
+              <a href="https://www.msri.org/seminars/25033" onclick="getOutboundLink('https://www.msri.org/seminars/25033'); return false;"> Cubical Sets Seminar</a>, MSRI, May 2020.
+	          <a href="slides/cubes-monad-notes.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'cubes-monad-notes'});">[Slides]</a>
+            </li>
+
+        	</br>
+			
+            <li> Shape Independent Category Theory and Enrichment.
+              <a href="https://ct-octoberfest.github.io/" onclick="getOutboundLink('https://ct-octoberfest.github.io/'); return false;"> Category Theory OctoberFest</a>, Johns Hopkins University, October 2019.
+	          <a href="slides/shapecategories.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'enriched-cell-notes'});">[Slides]</a>
+            </li>
+
+          </ul>
+		  
+          
+          <h2> Undergraduate Research </h2>
+		  
+		  <!--<h3> Papers </h3>-->
+
+          <ul>
+            <li> Densities of Hyperbolic Cusp Invariants. Joint with Colin Adams, Rose Kaplan-Kelly, Michael Moore, Shruthi Sridhar, and Joshua Wakefield. 
+	          <i> Proceedings of the American Mathematical Society.</i> Volume 146, Number 9, September 2018, Pages 4073–4089.
+	          <a href="papers/CuspDensityPaper.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'cusp-density-paper'});">[PDF]</a>
+	          <a href="https://arxiv.org/abs/1701.03479" onclick="getOutboundLink('https://arxiv.org/abs/1701.03479'); return false;">[arXiv]</a>
+	        </li>
+
+	        <li> specgen: A Tool for Modeling Statecharts in CSP. Joint with Chris Casinghino.
+	          <i> Nasa Formal Methods</i> <b>282</b>, 2017.
+	        </li>
+
+            <li> Nonstandard Neutrino Interactions In Supernovae. Joint with James Kneller, Gail McLaughlin, Charles Stapleford, and Daavid V&auml;&auml;n&auml;nen
+              <i>Physical Review D</i> <b>94</b>, 093007, 2016.
+	          <a href="papers/NonstandardNeutrinoPaper.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'neutrino-paper'});">[PDF]</a>
+              <a href="https://arxiv.org/abs/1605.04903" onclick="getOutboundLink('https://arxiv.org/abs/1605.04903'); return false;">[arXiv]</a>
+            </li>
+          </ul>
+
+          <!--<h3> Talks </h3>
+
+	      <ul>
+	        <li> Density Constructions for Hyperbolic Link Invariants.
+              <a href="http://www.math.cornell.edu/m/node/9003" onclick="getOutboundLink('http://www.math.cornell.edu/m/node/9003'); return false;"> Olivetti Club</a>, Cornell University, October 2017 and Graduate Student Seminar, Brandeis University, February 2017.
+	          <a href="slides/CuspDensityOlivetti.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'cusps-olivetti'});">[Slides]</a>
+            </li>
+
+            <li> The Geometry of Knots (Cusp Densities of Links).
+	          <a href="https://www.maa.org/meetings/mathfest-2016" onclick="getOutboundLink('https://www.maa.org/meetings/mathfest-2016'); return false;"> MathFest</a>, August 2016.
+	          <a href="slides/BrandonShruthiMathfest.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'mathfest-knots'});">[Slides]</a>
+	        </li>
+
+            <li> Cusp Density: Dense or Knot?.
+	          <a href="http://personal.denison.edu/~ludwigl/UnKnot/" onclick="getOutboundLink('http://personal.denison.edu/~ludwigl/UnKnot/'); return false;"> Unknot III Conference</a>, August 2016.
+	          <a href="slides/unknottalk.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'unknot-slides'});">[Slides]</a>
+	        </li>
+
+            <li> Non-Standard Interactions and Neutrino Oscillations in Core-Collapse Supernovae.
+	          <a href="https://www.brandeis.edu/departments/physics/research/astro.html" onclick="getOutboundLink('https://www.brandeis.edu/departments/physics/research/astro.html'); return false;"> Astrophysics Group</a>, Brandeis University, October 2014.
+	          <a href="slides/AstroLunch.pptx" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'astrolunch-neutrinos'});">[Slides]</a>
+	        </li>
+
+            <li> Neutrinos and the Unknown.
+              <a href="http://naturalsciences.org/" onclick="getOutboundLink('http://naturalsciences.org/'); return false;"> North Carolina Museum of Natural Sciences</a>, July 2014.
+	          <a href="slides/ScienceMuseum.pptx" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'science-museum-slides'});">[Slides]<a>
+            </li>
+          </ul>
+          
+          <h3> Posters </h3>
+
+	      <ul>
+	        <li> Cusp Invariants: Dense or Knot?.
+              Summer Research Symposium, Williams College, August 2016.
+	          <a href="posters/SmallPoster.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'small-poster'});">[Poster]</a>
+            </li>
+
+            <li> Non-Standard Interactions and Neutrino Oscillations in Core-Collapse Supernovae II.
+	          NCSU Undergraduate Research Symposium, July 2014.
+	          <a href="posters/FinalURCAPoster.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'final-neutrino-poster'});">[Poster]</a>
+	        </li>
+
+            <li> Non-Standard Interactions and Neutrino Oscillations in Core-Collapse Supernovae I.
+              UNC/NCSU CAP/URCA Joint Physics Poster Session, July 2014.
+	          <a href="posters/UNCPoster.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'unc-neutrino-poster'});">[Poster]<a>
+            </li>
+          </ul>-->
+          
+          </br></br>
+	  
+        </div>
+      </div>
+
+    </div>
+
+    <center>
+      <p>
+        <td ><i>Website Template by David Mehrle.</i></td>
+      </p>
+    </center>
+
+  </body>
+
+
+</html>

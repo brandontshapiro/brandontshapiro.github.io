@@ -1,0 +1,160 @@
+<html>
+  <head>
+  
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174939596-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-174939596-1');
+	</script>
+
+	<script>
+		/**
+		* Function that registers a click on an outbound link in Analytics.
+		* This function takes a valid URL string as an argument, and uses that URL string
+		* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+		* using 'navigator.sendBeacon' in browser that support it.
+		*/
+		var getOutboundLink = function(url) {
+		gtag('event', 'click', {
+		'event_category': 'outbound',
+		'event_label': url,
+		'transport_type': 'beacon',
+		'event_callback': function(){document.location = url;}
+		});
+		}
+	</script>
+
+  <link rel="stylesheet" type="text/css" href="../../style/style.css">
+
+    <title>
+      Homotopy Group Fall 2020
+    </title>
+  </head>
+
+  <body>
+    <div id="container">
+
+      <div id="page">
+        <div id="content">
+
+          <center>
+            <h1> Homotopy Group Student Seminar </h1>
+
+	   <p> This webpage is to maintain the schedule for our student seminar focused on topics in homotopy theory for the Fall 2020 semester.  The format is to alternate giving a series of 1-2 talks, with the first intended as an approachable introduction to the speaker's chosen topic. </p>
+	    
+            <h2> Information </h2>
+
+            <table>
+              <tbody>
+                <tr>
+                  <td><b>Meeting Time:</b></td>
+                  <td> Tuesday, 3pm-4pm Eastern Time </td>
+                </tr>
+                <tr>
+                  <td><b>Meeting Place:</b></td>
+		  <td> Zoom, The Internet </td>
+                </tr>
+              </tbody>
+            </table>
+
+	    <h2> Schedule </h2> 
+
+            <table>
+              <thead align="left">
+                <th>Date</th>
+                <th>Speaker</th>
+                <th>Topic</th>
+                <th>Notes</th>
+		<th> </th>
+              </thead>
+              <tbody>
+                <tr>
+          <td> 8 September </td>
+		  <td> Brandon Shapiro </td>
+		  <td> Partial Evaluations </td>
+		  <td> <a href="notes/partial-evaluations.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'partial-evaluations'});">Animated Slides</a> </td>
+                </tr> 
+               <tr>
+          <td> 15 September </td>
+		  <td> Brandon Shapiro </td>
+		  <td> Partial Evaluations </td>
+		  <td> <a href="notes/partial-evaluations-reduced.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'partial-evaluations-reduced'});">Less Animated Slides</a> </td>
+                </tr>
+                <tr>
+          <td> 22 September </td>
+		  <td> Yun Liu </td>
+		  <td> Bar Constructions </td>
+		  <td> <a href="notes/bar-construction.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'bar-construction'});">Talk Notes</a> </td>
+                </tr> 
+                <tr>
+		  <td> 29 September </td>
+		  <td> Yun Liu </td>
+		  <td> Bar Constructions </td>
+		  <td> <a href="notes/bar-construction-typed.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'bar-construction-typed'});">Typed Notes</a> </td>
+                </tr> 
+                <tr>
+		  <td> 6 October </td>
+		  <td> Elise McMahon </td>
+		  <td> Spectral Sequences </td>
+		  <td>  </td>
+                </tr> 
+                <tr>
+          <td> 13 October </td>
+		  <td> Elise McMahon </td>
+		  <td> Spectral Sequences </td>
+		  <td>  </td>
+                </tr> 
+                <tr>
+		  <td> 27 October </td>
+		  <td> David Mehrle </td>
+		  <td> Mackey Functors </td>
+		  <td>  </td>
+                </tr> 
+                <tr>
+		  <td> 3 November </td>
+		  <td> David Mehrle </td>
+		  <td> Tambara Functors </td>
+		  <td>  </td>
+                </tr> 
+                <tr>
+		  <td> 10 November </td>
+		  <td> Brandon Shapiro </td>
+		  <td> Homotopy of Categories </td>
+		  <td>  </td>
+                </tr> 
+                <tr>
+		  <td> 1 December </td>
+		  <td> David Mehrle </td>
+		  <td> Spectra </td>
+		  <td> <a href="notes/Spectra.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'spectra'});">Notes</a> </td>
+                </tr> 
+                <tr>
+		  <td> 8 December </td>
+		  <td> David Mehrle </td>
+		  <td> Orthogonal Spectra </td>
+		  <td> <a href="notes/orthogonal-spectra.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'orthogonal-spectra'});">Notes</a> </td>
+                </tr> 
+                <tr>
+		  <td> 15 December </td>
+		  <td> David Mehrle </td>
+		  <td>  </td>
+		  <td>  </td>
+                </tr> 
+            </table>
+
+	    </div>
+      </div>
+    </div>
+    
+    <center>
+      <p>
+        <td ><i>Website Template by David Mehrle.</i></td>
+      </p>
+    </center>
+
+  </body>
+
+</html>

@@ -1,0 +1,160 @@
+<html>
+  <head>
+  
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174939596-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-174939596-1');
+	</script>
+
+	<script>
+		/**
+		* Function that registers a click on an outbound link in Analytics.
+		* This function takes a valid URL string as an argument, and uses that URL string
+		* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+		* using 'navigator.sendBeacon' in browser that support it.
+		*/
+		var getOutboundLink = function(url) {
+		gtag('event', 'click', {
+		'event_category': 'outbound',
+		'event_label': url,
+		'transport_type': 'beacon',
+		'event_callback': function(){document.location = url;}
+		});
+		}
+	</script>
+
+  <link rel="stylesheet" type="text/css" href="../../style/style.css">
+
+    <title>
+      Homotopy Group Spring 2021
+    </title>
+  </head>
+
+  <body>
+    <div id="container">
+
+      <div id="page">
+        <div id="content">
+
+          <center>
+            <h1> Homotopy Group Student Seminar </h1>
+
+	   <p> This webpage is to maintain the schedule for our student seminar focused on topics in homotopy theory, broadly construed, for the Spring 2021 semester.  The format is to alternate giving a series of 1-2 talks, with the first intended as an approachable introduction to the speaker's chosen topic. See <a href="../homotopyF20/index.html">here</a> for the Fall 2020 seminar.</p>
+	    
+            <h2> Information </h2>
+
+            <table>
+              <tbody>
+                <tr>
+                  <td><b>Meeting Time:</b></td>
+                  <td> Thursday, 2pm-3pm Eastern Time </td>
+                </tr>
+                <tr>
+                  <td><b>Meeting Place:</b></td>
+		  <td> Zoom, The Internet </td>
+                </tr>
+              </tbody>
+            </table>
+
+	    <h2> Schedule </h2> 
+
+            <table>
+              <thead align="left">
+                <th>Date</th>
+                <th>Speaker</th>
+                <th>Topic</th>
+                <th>Notes</th>
+		<th> </th>
+              </thead>
+              <tbody>
+                <tr>
+          <td> 18 February </td>
+		  <td> Elise McMahon </td>
+		  <td> Scissors Congruence </td>
+		  <td> <a href="notes/scissors.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'scissors'});">Notes</a> </td>
+                </tr> 
+               <tr>
+          <td> 25 February </td>
+		  <td> Elise McMahon </td>
+		  <td> Scissors Congruence </td>
+		  <td>  </td>
+                </tr>
+                <tr>
+          <td> 4 March </td>
+		  <td> Guanyu Li </td>
+		  <td> Andre-Quillen (co)Homology </td>
+		  <td>  </td>
+                </tr> 
+                <tr>
+          <td> 11 March </td>
+		  <td> Guanyu Li </td>
+		  <td> Andre-Quillen (co)Homology </td>
+		  <td> <a href="notes/Andre-Quillen.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'AndreQuillen'});">Notes</a> </td>
+                </tr> 
+				<tr>
+          <td> 18 March </td>
+		  <td> Brandon Shapiro </td>
+		  <td> Double Categories in K-Theory </td>
+		  <td>  </td>
+                </tr> 
+				<tr>
+          <td> 25 March </td>
+		  <td> Brandon Shapiro </td>
+		  <td> Double Categories in K-Theory </td>
+		  <td>  </td>
+                </tr> 
+				<tr>
+          <td> 1 April </td>
+		  <td> Maru Sarazola </td>
+		  <td> Thesis </td>
+		  <td>  </td>
+                </tr> 
+				<tr>
+          <td> 15 April </td>
+		  <td> Brandon Shapiro </td>
+		  <td> Homotopy Limits </td>
+		  <td> <a href="notes/holims.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'holims'});">Notes</a> </td>
+                </tr> 
+				<tr>
+          <td> 22 April </td>
+		  <td> Shruthi Sridhar </td>
+		  <td> Embedding/Configuration Spaces </td>
+		  <td> <a href="notes/embedding-calculus.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'embedding-calculus'});">Notes</a> </td>
+                </tr> 
+				<tr>
+          <td> 29 April </td>
+		  <td> Shruthi Sridhar </td>
+		  <td> Embedding/Configuration Spaces </td>
+		  <td>  </td>
+                </tr> 
+				<tr>
+          <td> 6 May </td>
+		  <td> Chase Vogeli </td>
+		  <td> K-Theory of Finite Fields </td>
+		  <td>  </td>
+          	<tr>
+          <td> 13 May </td>
+		  <td> Chase Vogeli </td>
+		  <td> K-Theory of Finite Fields </td>
+		  <td>  </td>
+                </tr> 
+				
+            </table>
+
+	    </div>
+      </div>
+    </div>
+    
+    <center>
+      <p>
+        <td ><i>Website Template by David Mehrle.</i></td>
+      </p>
+    </center>
+
+  </body>
+
+</html>

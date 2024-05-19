@@ -1,0 +1,250 @@
+<html>
+  <head>
+  
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174939596-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-174939596-1');
+	</script>
+
+	<script>
+		/**
+		* Function that registers a click on an outbound link in Analytics.
+		* This function takes a valid URL string as an argument, and uses that URL string
+		* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+		* using 'navigator.sendBeacon' in browser that support it.
+		*/
+		var getOutboundLink = function(url) {
+		gtag('event', 'click', {
+		'event_category': 'outbound',
+		'event_label': url,
+		'transport_type': 'beacon',
+		'event_callback': function(){document.location = url;}
+		});
+		}
+	</script>
+
+  <link rel="stylesheet" type="text/css" href="../style/style.css">
+  <link rel="icon" type="image/png" href="../images/paradox.png">
+
+    <title>
+      Events
+    </title>
+    
+  </head>
+
+  <body>
+
+    <div id="container">
+
+      <div id="banner">
+        <h1> <a href="../index.html"> Brandon Shapiro </a> | Events </h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="../index.html">About</a></li>
+          <li><a href="../research/index.html"> Research </a></li>
+          <li><a href="../resources/index.html"> Exposition </a></li>
+          <li><a href="../events/index.html"> Events </a></li>
+		  <li><a href="https://blogular8.wordpress.com/" onclick="getOutboundLink('https://blogular8.wordpress.com/'); return false;"> Blog </a></li>
+        </ul>
+      </nav>
+
+      <div id="page">
+        <div id="content">
+
+	      <p>
+            Here are links to the pages for seminars, reading groups, workshops, and conferences I have run or participated in. 
+          </p>  
+          
+          <h2> Seminars </h2>
+
+	      <ul>
+		    <li> Berkeley Seminar. Topos Institute, Spring 2022-Present.
+	          <a href="https://topos.site/topos-colloquium/" onclick="getOutboundLink('https://topos.site/topos-colloquium/'); return false;">[Webpage]</a>
+	        </li>
+            
+            <li> Topos Institute Colloquium. Online, Spring 2021-Present.
+	          <a href="https://topos.site/berkeley-seminar/" onclick="getOutboundLink('https://topos.site/berkeley-seminar/'); return false;">[Webpage]</a>
+	        </li>
+            
+            <li> Homotopy Group Student Seminar. Cornell University, Spring 2021.
+	          <a href="homotopyS21/index.html">[Webpage]</a>
+	        </li>
+            
+            <li> eCHT Equivariant Algebra Seminar. Online, Spring 2021.
+			  <a href="https://s.wayne.edu/echt/echt-reading-seminars/echt-equivariant-algebra-reading-seminar-winter-2021/" onclick="getOutboundLink('https://s.wayne.edu/echt/echt-reading-seminars/echt-equivariant-algebra-reading-seminar-winter-2021/'); return false;">[Webpage]</a>
+			</li>
+			
+			<li> Homotopy Group Student Seminar. Cornell University, Fall 2020.
+	          <a href="homotopyF20/index.html">[Webpage]</a>
+	        </li>
+			
+			<li> Johns Hopkins Category Theory Seminar. Online, Fall 2020.
+			  <a href="https://math.jhu.edu/~eriehl/ct/" onclick="getOutboundLink('https://math.jhu.edu/~eriehl/ct/'); return false;">[Webpage]</a>
+			</li>
+			            
+            <li> MIT (Applied) Categories Seminar. Online, 2020.
+			  <a href="http://brendanfong.com/seminar.html" onclick="getOutboundLink('http://brendanfong.com/seminar.html'); return false;">[Webpage]</a>
+			</li>
+			
+			<li> Cubical Sets Seminar. MSRI, May 2020.
+			  <a href="https://www.msri.org/web/msri/scientific/colloquia-seminars" onclick="getOutboundLink('https://www.msri.org/web/msri/scientific/colloquia-seminars'); return false;">[Webpage]</a>
+			</li>
+			
+			<li> Berstein Seminar on Algebraic K-Theory. Cornell University, Fall 2019.
+			  <a href="http://pi.math.cornell.edu/~zakh/7510/" onclick="getOutboundLink('http://pi.math.cornell.edu/~zakh/7510/'); return false;">[Webpage]</a>
+			</li>
+			
+			<li> Applied Category Theory Adjoint School. Video Conference, Spring 2019.
+	          <a href="https://www.appliedcategorytheory.org/adjoint-school-act-2019/" onclick="getOutboundLink('https://www.appliedcategorytheory.org/adjoint-school-act-2019/'); return false;">[Webpage]</a>
+	        </li>
+		  
+	        <li> Homotopy Group Student Seminar. Cornell University, Spring 2019.
+	          <a href="homotopyS19/index.html">[Webpage]</a>
+	        </li>
+            
+            <li> Homotopy Type Theory Electronic Seminar. Online, Spring 2018-Present.
+	          <a href="https://www.uwo.ca/math/faculty/kapulkin/seminars/hottest.html" onclick="getOutboundLink('https://www.uwo.ca/math/faculty/kapulkin/seminars/hottest.html'); return false;">[Webpage]</a>
+	        </li>
+
+	        <li> Olivetti Club (Graduate Student Seminar). Cornell University, Fall 2017-Fall 2022.
+	          <a href="http://pi.math.cornell.edu/m/event-list-p/olivetti" onclick="getOutboundLink('http://pi.math.cornell.edu/m/event-list-p/olivetti'); return false;">[Webpage]</a>
+	        </li>
+			
+			<li> Topology and Geometric Group Theory Seminar. Cornell University, Fall 2017-Fall 2022.
+	          <a href="http://pi.math.cornell.edu/m/event-list-p/geomgroup" onclick="getOutboundLink('http://pi.math.cornell.edu/m/event-list-p/geomgroup'); return false;">[Webpage]</a>
+	        </li>
+          </ul>
+          
+          <h2> Reading Groups </h2>
+
+	      <ul>
+	        <li> "Elements of Infinity Category Theory" Reading Group. Cornell University, Fall 2018.
+	          <a href="http://www.math.cornell.edu/~dmehrle/notes/cornell/18fa/homotopy/index.html" onclick="getOutboundLink('http://www.math.cornell.edu/~dmehrle/notes/cornell/18fa/homotopy/index.html'); return false;">[Webpage]</a>
+	        </li>
+
+	        <li> Homotopy Type Theory Reading Group. Cornell University, Spring 2018.
+	          <a href="hott/index.html">[Webpage]</a>
+	        </li>
+
+	        <li> Homotopy Theory Reading Group. Cornell University, Spring 2018.
+	          <a href="http://www.math.cornell.edu/~dmehrle/notes/cornell/18sp/homotopy/index.html" onclick="getOutboundLink('http://www.math.cornell.edu/~dmehrle/notes/cornell/18sp/homotopy/index.html'); return false;">[Webpage]</a>
+	        </li>
+          </ul>
+		  
+		  <h2> Conferences & Workshops </h2>
+
+	      <ul>
+		  
+		    <li> Applied Category Theory Conference. University of Strathclyde, July 2022.
+			  <a href="https://msp.cis.strath.ac.uk/act2022/" onclick="getOutboundLink('https://msp.cis.strath.ac.uk/act2022/'); return false;">[Webpage]</a>
+			</li>
+		  
+			<li> Workshop on Polynomial Functors. Topos Institute, Online, March 2022.
+			  <a href="https://topos.site/p-func-workshop/" onclick="getOutboundLink('https://topos.site/p-func-workshop/'); return false;">[Webpage]</a>
+			</li>
+		  
+			<li> Categories and Companions Symposium. Online, June 2021.
+			  <a href="http://web.science.mq.edu.au/groups/coact/seminar/CaCS2021/" onclick="getOutboundLink('http://web.science.mq.edu.au/groups/coact/seminar/CaCS2021/'); return false;">[Webpage]</a>
+			</li>
+		  
+			<li> Topology Festival. Cornell University, Online, May 2021.
+			  <a href="https://e.math.cornell.edu/sites/topology/2021/index.php" onclick="getOutboundLink('https://e.math.cornell.edu/sites/topology/2021/index.php'); return false;">[Webpage]</a>
+			</li>
+			
+			<li> Workshop on Polynomial Functors. Topos Institute, Online, March 2021.
+			  <a href="https://topos.site/p-func-workshop/2021/" onclick="getOutboundLink('https://topos.site/p-func-workshop/2021/'); return false;">[Webpage]</a>
+			</li>
+		  
+			<li> Workshop on infinity-Categories and their Applications. MPIM, Online, August 2020.
+			  <a href="https://www.mpim-bonn.mpg.de/node/10159" onclick="getOutboundLink('https://www.mpim-bonn.mpg.de/node/10159'); return false;">[Webpage]</a>
+			</li>
+			
+			<li> Operad Pop-Up Conference. Online, August 2020.
+			  <a href="https://operads.com" onclick="getOutboundLink('https://operads.com'); return false;">[Webpage]</a>
+			</li>
+			
+			<li> (infinity, n)-Categories, Factorization Homology, and Algebraic K-Theory. MSRI, March 2020.
+			  <a href="https://www.msri.org/workshops/918" onclick="getOutboundLink('https://www.msri.org/workshops/918'); return false;">[Webpage]</a>
+			</li>
+			
+			<li> Introductory Workshop: Higher Categories and Categorification. MSRI, February 2020.
+			  <a href="https://www.msri.org/workshops/908" onclick="getOutboundLink('https://www.msri.org/workshops/908'); return false;">[Webpage]</a>
+			</li>
+			
+			<li> Category Theory OctoberFest. Johns Hopkins University, October 2019.
+			  <a href="https://ct-octoberfest.github.io/" onclick="getOutboundLink('https://ct-octoberfest.github.io/'); return false;">[Webpage]</a>
+			</li>
+			
+			<li> Applied Category Theory School & Workshop. Oxford University, July 2019.
+			  <a href="https://www.appliedcategorytheory.org/adjoint-school-act-2019/" onclick="getOutboundLink('https://www.appliedcategorytheory.org/adjoint-school-act-2019/'); return false;">[Webpage]</a>
+			</li>
+			
+			<li> Applied Category Theory Conference. Oxford University, July 2019.
+			  <a href="http://www.cs.ox.ac.uk/ACT2019/" onclick="getOutboundLink('http://www.cs.ox.ac.uk/ACT2019/'); return false;">[Webpage]</a>
+			</li>
+			
+			<li> Category Theory 2019. University of Edinburgh, July 2019.
+			  <a href="http://conferences.inf.ed.ac.uk/ct2019/" onclick="getOutboundLink('http://conferences.inf.ed.ac.uk/ct2019/'); return false;">[Webpage]</a>
+			</li>
+			
+			<li> Topology Festival. Cornell University, May 2019.
+			  <a href="http://pi.math.cornell.edu/~festival/archive/index.php" onclick="getOutboundLink('http://pi.math.cornell.edu/~festival/archive/index.php'); return false;">[Webpage]</a>
+			</li>
+			
+			<li> Workshop on Derivators. University of Regensburg, April 2019.
+			  <a href="https://www-app.uni-regensburg.de/Fakultaeten/MAT/sfb-higher-invariants/index.php/Derivators" onclick="getOutboundLink('https://www-app.uni-regensburg.de/Fakultaeten/MAT/sfb-higher-invariants/index.php/Derivators'); return false;">[Webpage]</a>
+			</li>
+			
+			<li> School and Workshop on Univalent Foundations. University of Birmingham, April 2019.
+			  <a href="https://unimath.github.io/bham2019/" onclick="getOutboundLink('https://unimath.github.io/bham2019/'); return false;">[Webpage]</a>
+			</li>
+			
+			<li> Category Theory OctoberFest. City University of New York, October 2018.
+	          <a href="https://ct-octoberfest.github.io/2018/" onclick="getOutboundLink('https://ct-octoberfest.github.io/2018/'); return false;">[Webpage]</a>
+	        </li>
+		  
+	        <li> Vladimir Voevodsky Memorial Conference. Institute for Advanced Study, September 2018.
+	          <a href="https://www.math.ias.edu/vvmc2018" onclick="getOutboundLink('https://www.math.ias.edu/vvmc2018'); return false;">[Webpage]</a>
+	        </li>
+            
+            <li> Young Topologists Meeting. University of Copenhagen, July 2018.
+	          <a href="https://www.math.ku.dk/english/research/conferences/2018/ytm2018/" onclick="getOutboundLink('https://www.math.ku.dk/english/research/conferences/2018/ytm2018/'); return false;">[Webpage]</a>
+	        </li>
+
+	        <li> Homotopy Theory Summer. Berlin Mathematical School, June 2018.
+	          <a href="https://sites.google.com/view/homotopytheorysummerberlin/" onclick="getOutboundLink('https://sites.google.com/view/homotopytheorysummerberlin/'); return false;">[Webpage]</a>
+	        </li>
+			
+			<li> Talbot Workshop. Government Camp, OR, May 2018.
+	          <a href="https://math.mit.edu/conferences/talbot/index.php?year=2018" onclick="getOutboundLink('https://math.mit.edu/conferences/talbot/index.php?year=2018'); return false;">[Webpage]</a>
+	        </li>
+			
+			<li> Topology Festival. Cornell University, May 2018.
+	          <a href="http://pi.math.cornell.edu/~festival/archive/index.php" onclick="getOutboundLink('http://pi.math.cornell.edu/~festival/archive/index.php'); return false;">[Webpage]</a>
+	        </li>
+          </ul>
+          
+                    
+          </br></br>
+	  
+        </div>
+      </div>
+
+    </div>
+
+    <center>
+      <p>
+        <td ><i>Website Template by David Mehrle.</i></td>
+      </p>
+    </center>
+
+  </body>
+
+
+</html>
