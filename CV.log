@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.29)  9 JAN 2024 22:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.29)  19 MAY 2024 01:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -934,11 +934,11 @@ Package rerunfilecheck Info: File `CV.out' has not changed.
 (rerunfilecheck)             Checksum: E571DCEDF3E2BA310F8FA1826B6A7374;1447.
  ) 
 Here is how much of TeX's memory you used:
- 27041 strings out of 478536
- 513318 string characters out of 2849413
- 826283 words of memory out of 3000000
+ 27053 strings out of 478536
+ 513534 string characters out of 2849413
+ 826282 words of memory out of 3000000
  44643 multiletter control sequences out of 15000+600000
- 492942 words of font info for 166 fonts, out of 8000000 for 9000
+ 493392 words of font info for 174 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  129i,12n,122p,1001b,472s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
@@ -951,7 +951,7 @@ s/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on CV.pdf (4 pages, 159905 bytes).
+Output written on CV.pdf (4 pages, 160314 bytes).
 PDF statistics:
  148 PDF objects out of 1000 (max. 8388607)
  17 named destinations out of 1000 (max. 500000)
