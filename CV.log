@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.29)  2 JUN 2024 18:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.29)  5 NOV 2024 15:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -931,14 +931,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--37
 {C:/Users/btazu/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map}]
 [2] [3] [4] (CV.aux)
 Package rerunfilecheck Info: File `CV.out' has not changed.
-(rerunfilecheck)             Checksum: E571DCEDF3E2BA310F8FA1826B6A7374;1447.
+(rerunfilecheck)             Checksum: D8AF2FA3F96F055DBF02EED0432082B2;1422.
  ) 
 Here is how much of TeX's memory you used:
- 27053 strings out of 478536
- 513534 string characters out of 2849413
- 824283 words of memory out of 3000000
- 44643 multiletter control sequences out of 15000+600000
- 493392 words of font info for 174 fonts, out of 8000000 for 9000
+ 27051 strings out of 478536
+ 513522 string characters out of 2849413
+ 823370 words of memory out of 3000000
+ 44642 multiletter control sequences out of 15000+600000
+ 493325 words of font info for 174 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  129i,12n,122p,1001b,472s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
@@ -951,9 +951,9 @@ s/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on CV.pdf (4 pages, 160709 bytes).
+Output written on CV.pdf (4 pages, 160139 bytes).
 PDF statistics:
- 149 PDF objects out of 1000 (max. 8388607)
+ 150 PDF objects out of 1000 (max. 8388607)
  17 named destinations out of 1000 (max. 500000)
  41581 words of extra memory for PDF output out of 42996 (max. 10000000)
 
