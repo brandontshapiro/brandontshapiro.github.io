@@ -1,0 +1,124 @@
+<html>
+  <head>
+  
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174939596-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-174939596-1');
+	</script>
+
+	<script>
+		/**
+		* Function that registers a click on an outbound link in Analytics.
+		* This function takes a valid URL string as an argument, and uses that URL string
+		* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+		* using 'navigator.sendBeacon' in browser that support it.
+		*/
+		var getOutboundLink = function(url) {
+		gtag('event', 'click', {
+		'event_category': 'outbound',
+		'event_label': url,
+		'transport_type': 'beacon',
+		'event_callback': function(){document.location = url;}
+		});
+		}
+	</script>
+
+  <link rel="stylesheet" type="text/css" href="../style/style.css">
+  <link rel="icon" type="image/png" href="../images/paradox.png">
+
+    <title>
+      Teaching
+    </title>
+    
+  </head>
+
+  <body>
+
+    <div id="container">
+
+      <div id="banner">
+        <h1> <a href="../index.html"> Brandon Shapiro </a> | Exposition </h1>
+      </div>
+
+      <center>
+	  <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research/index.html"> Research </a></li>
+          <li><a href="teaching/index.html"> Teaching </a></li>
+          <li><a href="mentoring/index.html"> Mentoring </a></li>
+          <li><a href="resources/index.html"> Exposition </a></li>
+          <!--
+		  <li><a href="../events/index.html"> Events </a></li>
+		  <li><a href="https://blogular8.wordpress.com/" onclick="getOutboundLink('https://blogular8.wordpress.com/'); return false;"> Blog </a></li>
+          -->
+		</ul>
+      </nav>
+	  </center>
+
+      <div id="page">
+        <div id="content">
+
+	      <h2> Spring 2025 <\h2>
+		  
+		  Math 3250 (Ordinary Differential Equations)
+		  <ul>
+		    <li> Section 100: TuTh 9:30am - 10:45am, Ridley Hall G006 </li>
+			<li> Section 200: TuTh 11:00am - 12:15pm, New Cabell Hall 323 </li>
+		  </ul>
+		  
+		  <h2> Fall 2024 <\h2>
+		  
+		  Math 7810 (Algebraic Topology II)
+		  <ul>
+		  	<li> MoWeFr 11:00am - 11:50am, New Cabell Hall 038 </li>
+		  </ul>
+		  
+		  <p>
+		    A course on cohomology theory, covering basic constructions, cup products, and Poincare duality, followed by a brief tour of classical homotopy theory.
+		  </p>
+		  
+		  <h2> Spring 2024 <\h2>
+		  
+		  Math 3351 (Elementary Linear Algebra)
+		  <ul>
+		    <li> Section 001: MoWe 2:00pm - 3:15pm, Monroe Hall 122, <a href="https://canvas.its.virginia.edu/courses/89212">[Canvas page]</a> </li>
+			<li> Section 002: MoWe 3:30pm - 4:45pm, Monroe Hall 122, <a href="https://canvas.its.virginia.edu/courses/100905">[Canvas page]</a> </li>
+		  </ul>
+		  
+		  <p>
+		    An introduction to systems of linear equations, matrix algebra, vector spaces, and inner products with an emphasis on mathematical proofs.
+		  </p>
+		  
+		   
+		  <h2> Fall 2023 <\h2>
+		  
+		  Math 4720 (Introduction to Differential Geometry)
+		  <ul>
+		  	<li> MoWeFr 11:00am - 11:50am, Monroe Hall 118, <a href="https://canvas.its.virginia.edu/courses/76027">[Canvas page]</a> </li>
+		  </ul>	
+		  
+		  <p>
+		    An introduction to the theory of curvature of curves and surfaces in Euclidean space, culminating in the Gauss-Bonnet Theorem.
+		  </p>
+		  
+		  	  
+        </div>
+      </div>
+
+    </div>
+
+    <center>
+      <p>
+        <td ><i>Website Template by David Mehrle.</i></td>
+      </p>
+    </center>
+
+  </body>
+
+
+</html>

@@ -1,0 +1,119 @@
+<html>
+  <head>
+  
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174939596-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-174939596-1');
+	</script>
+
+	<script>
+		/**
+		* Function that registers a click on an outbound link in Analytics.
+		* This function takes a valid URL string as an argument, and uses that URL string
+		* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+		* using 'navigator.sendBeacon' in browser that support it.
+		*/
+		var getOutboundLink = function(url) {
+		gtag('event', 'click', {
+		'event_category': 'outbound',
+		'event_label': url,
+		'transport_type': 'beacon',
+		'event_callback': function(){document.location = url;}
+		});
+		}
+	</script>
+
+  <link rel="stylesheet" type="text/css" href="../style/style.css">
+  <link rel="icon" type="image/png" href="../images/paradox.png">
+
+    <title>
+      Mentoring
+    </title>
+    
+  </head>
+
+  <body>
+
+    <div id="container">
+
+      <div id="banner">
+        <h1> <a href="../index.html"> Brandon Shapiro </a> | Exposition </h1>
+      </div>
+
+      <center>
+	  <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research/index.html"> Research </a></li>
+          <li><a href="teaching/index.html"> Teaching </a></li>
+          <li><a href="mentoring/index.html"> Mentoring </a></li>
+          <li><a href="resources/index.html"> Exposition </a></li>
+          <!--
+		  <li><a href="../events/index.html"> Events </a></li>
+		  <li><a href="https://blogular8.wordpress.com/" onclick="getOutboundLink('https://blogular8.wordpress.com/'); return false;"> Blog </a></li>
+          -->
+		</ul>
+      </nav>
+	  </center>
+
+      <div id="page">
+        <div id="content">
+		
+		  <p>
+		    This page describes some of my past and present mentoring activities. If you are an undergraduate interested in learning more about any of these programs or working on a research project, send me an email at brandonshapiro (at) virginia (dot) edu.
+		  </p>
+
+	      <h2> UVA Topology REU </h2>
+		  
+		  <p>
+		    In June/July 2024 I mentored a group in the <a href="https://sites.google.com/view/2024-uva-topology-reu">UVA Topology REU</a>. Our project focused on modeling Euclidean and hyperbolic tilings of the 2-dimensional plane using techniques from category theory. In algebraic topology, spaces are often studied using arrangements of cells with fixed labels called "presheaves" which have very convenient mathematical properties. Each tiling can be made into a presheaf in many different ways, as the labels on each polygon amount to a choice of the pattern in which the edges of the polygon should be directed. Below left is a picture of a hyperbolic tiling with 4 pentagons at each vertex, and below right is a picture showing how its edges can be labeled to form a presheaf.
+		  </p>
+		  
+		  <img src="images/tiling.png" alt="tiling" height="300">    <img src="images/presheaf.png" alt="presheaf" height="300">
+		  
+		  <h2> UVA Geometry Lab </h2>
+		  
+		  <p>
+		    The <a href="https://math.virginia.edu/geolab/">Geometry Lab</a> at UVA is a program where beginning undergraduates work on hands on geometry projects guided by graduate student and postdoc mentors. For the last three semesters I have led groups using the Zome tool to study polyhedra and polytopes (higher dimensional polyhedra).
+		  </p>
+		  
+		  <p>
+		    The geometry lab also runs activities with the <a href="https://www.virginiaequitycenter.org/starr-hill-pathways">Starr Hill Pathways</a> program for middle and high school students, and hosts a stand at the local farmers market.
+		  </p>
+		  
+		  <img src="images/zomeballs.png" alt="tiling" height="200">    <img src="images/120.png" alt="presheaf" height="200">    <img src="images/market.jpg" alt="presheaf" height="200">
+		  
+		  <h2> Directed Reading Program </h2>
+		  
+		  <p>
+		    I have been involved in directed reading programs at several schools, where undergraduates are paired up with grad students or postdocs to pursue personalized independent study projects. In the past I have mentored projects on constructive type theory, categorical algebra, and combinatorial topology.
+		  </p>
+		  
+		  <h2> Julia Robinson Math Festival </h2>
+		  
+		  <p>
+		    As a grad student at Cornell I volunteered at the <a href="https://jrmf.org/">Julia Robinson Math Festival</a>, an amazing program bringing fun math activities to kids of all ages. Look up <a href="https://jrmf.org/wp-content/uploads/Hexaflexagons-Festival-Guide.pdf">hexaflexagons</a> for a fun way to fidget with math!
+		  </p>
+		  
+		  
+		  
+	  
+        </div>
+      </div>
+
+    </div>
+
+    <center>
+      <p>
+        <td ><i>Website Template by David Mehrle.</i></td>
+      </p>
+    </center>
+
+  </body>
+
+
+</html>
