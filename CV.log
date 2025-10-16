@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.29)  8 SEP 2025 23:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.29)  15 OCT 2025 22:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -930,17 +930,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--37
 
 {C:/Users/btazu/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map}]
 [2] [3] [4] (CV.aux)
-Package rerunfilecheck Info: File `CV.out' has not changed.
-(rerunfilecheck)             Checksum: 2DAD991DEAD7BA585D3D4767D287C2EF;1447.
+
+Package rerunfilecheck Warning: File `CV.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `CV.out':
+(rerunfilecheck)             Before: 2DAD991DEAD7BA585D3D4767D287C2EF;1447
+(rerunfilecheck)             After:  317B07080DAAB9B2B6B5618E3CBB8980;1447.
  ) 
 Here is how much of TeX's memory you used:
- 27063 strings out of 478536
- 513624 string characters out of 2849413
- 823368 words of memory out of 3000000
+ 27066 strings out of 478536
+ 513651 string characters out of 2849413
+ 827368 words of memory out of 3000000
  44642 multiletter control sequences out of 15000+600000
- 493908 words of font info for 182 fonts, out of 8000000 for 9000
+ 494057 words of font info for 184 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 129i,13n,122p,1001b,472s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 129i,12n,122p,1001b,472s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
@@ -951,7 +957,7 @@ s/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on CV.pdf (4 pages, 161243 bytes).
+Output written on CV.pdf (4 pages, 161123 bytes).
 PDF statistics:
  151 PDF objects out of 1000 (max. 8388607)
  17 named destinations out of 1000 (max. 500000)

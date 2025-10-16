@@ -64,32 +64,183 @@
         <div id="content">
 		
 		  <p> 
-		    My research uses combinatorial and categorical techniques to study a wide range of objects in topology, geometry, algebra, and the sciences in a visual way that supports generalizations and connections between different subjects.
+		    My research uses combinatorial and categorical techniques to study a wide range of objects in topology, geometry, algebra, and the sciences in a visual way that supports generalizations and connections between different subjects. I like to say I play with shapes all day, and in one way or another all of my work really boils down to sticking together various shapes in various patterns for various purposes. Below are descriptions of my papers organized by the several different topics I work on: <a href="#geometry">categorical geometry</a> projects with undergraduates, <a href="#ktheory">combinatorial K-theory</a>, <a href="#higher">higher categorical structures</a>, and <a href="#applied">applied category theory</a>, and further down are some <a href="#talks">talks</a> I've given and <a href="#older">older projects</a>.
+		  </p>
+		  
+		  
+		  <div id="geometry"><h2> Categorical geometry </h2></div>
+		  
+		  <p>
+		    Hyperbolic and Euclidean tilings of the plane provide beautiful examples of spaces built up out of cells of fixed shapes, similar to the decompositions of spaces common in geometric and algebraic topology. The categorical models of combinatorial spaces used in algebraic topology ("presheaves") can also model tilings, but doing so requires choices of directions and labels that form a rich theory accessible to undergraduate researchers.
+		  </p>
+		  
+		  <ul>
+		  
+			<li> Categorical Tiling Theory: Constructing Directed Planar Tilings via Edge Reversal. Joint with Catherine DiLeo and Preston Sessoms (2025).
+	          
+	          <!--<a href="papers/chain_complexes.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'chain-complexes'});">[PDF]</a>-->
+	          <a href="https://arxiv.org/abs/2509.06363" onclick="getOutboundLink('https://arxiv.org/abs/2509.06363'); return false;">[arXiv]</a>
+	        </li>
+			
+			<p>
+				Introduces "m-gon categories" whose presheaves are arrangements of vertices, directed edges, and labeled m-gon tiles with a fixed pattern of edge directions, and counts the number of these categories up to rotation and reflection of the m-gon. Defines "directed tilings" which are presheaves on an m-gon category corresponding to an m-gon tiling of the plane, and shows that any directed tiling with n m-gons at each vertex can be recovered from any single such directed tiling by reversing edges in a particular way. Constructs a large family of directed tilings using modified reflections of tiles, with elegant symmetry properties.
+			</p>
+			
+			</br>
+			
+		  <ul>
+		  
+		  <p>
+			If you are interested in working on a project related to this let me know, I have several open questions in mind!
+		  </p>
+		  
+		  <div id="ktheory"><h2> Combinatorial K-theory </h2></div>
+		  
+		  
+		  <p>	
+			Algebraic K-theory builds a group-like space which describes how various types of objects are built up out of smaller pieces, where "smaller" is tracked by certain morphisms in a category. My work builds on an <a href="https://arxiv.org/abs/1811.08014" onclick="getOutboundLink('https://arxiv.org/abs/1811.08014'); return false;"><strong>axiomatic framework</strong></a> for K-theory called "CGW categories" which uses double categories to model a wide range of objects with two different ways of mapping a smaller object to a bigger one. One way this plays out is by treating "combinations" of objects like extensions A &rarr; B &rarr; C of modules or complementary inclusions A &rarr; B &larr; C of sets or spaces as the same type of structure.
 		  </p>
 
+		  <ul>
+		  
+			<li> Additivity and Fiber Sequences for Combinatorial K-Theory. Joint with <a href="http://pi.math.cornell.edu/~maru/" onclick="getOutboundLink('http://pi.math.cornell.edu/~maru/'); return false;">Maru Sarazola</a> (updated 2025).
+	          
+	          <!--<a href="papers/chain_complexes.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'chain-complexes'});">[PDF]</a>-->
+	          <a href="https://arxiv.org/abs/2107.07701" onclick="getOutboundLink('https://arxiv.org/abs/2107.07701'); return false;">[arXiv]</a>
+	        </li>
+			
+			<p>
+				Extends the CGW categories framework to include weak equivalences between objects and proves several standard K-theory theorems for these "ECGW categories" (called additivity, delooping, fibration, and localization theorems) illustrated by examples from the K-theories of polytopes and finite G-sets.
+			</p>
+			
+			</br>
+			
+			<li> A combinatorial construction of homology via ACGW categories. Joint with <a href="http://pi.math.cornell.edu/~maru/" onclick="getOutboundLink('http://pi.math.cornell.edu/~maru/'); return false;">Maru Sarazola</a> and <a href="https://pi.math.cornell.edu/~zakh/" onclick="getOutboundLink('https://pi.math.cornell.edu/~zakh/'); return false;">Inna Zakharevich</a> (2024). To appear in Contemporary Mathematics.
+	          
+	          <!--<a href="papers/chain_complexes.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'chain-complexes'});">[PDF]</a>-->
+	          <a href="https://arxiv.org/abs/2107.07701" onclick="getOutboundLink('https://arxiv.org/abs/2107.07701'); return false;">[arXiv]</a>
+	        </li>
+			
+			<p>
+				CGW categories offer a framework for generalizing homological algebra as well as K-theory, including to chain complexes of sets. Homology for sets can be reasoned about using Venn-diagram-like pictures which provide useful intuition for homological algebra more generally (and in these pictures the Snake lemma still looks like a snake).
+			</p>
+			
+			</br>
+			
+			<li> A Gillet--Waldhausen Theorem for Chain Complexes of Sets. Joint with <a href="http://pi.math.cornell.edu/~maru/" onclick="getOutboundLink('http://pi.math.cornell.edu/~maru/'); return false;">Maru Sarazola</a> (2022).
+	          
+	          <!--<a href="papers/chain_complexes.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'chain-complexes'});">[PDF]</a>-->
+	          <a href="https://arxiv.org/abs/2107.07701v2" onclick="getOutboundLink('https://arxiv.org/abs/2107.07701v2'); return false;">[arXiv]</a>
+	        </li>
+			
+			<p>
+				In a previous version of "Additivity and Fiber Sequences for Combinatorial K-Theory" from above, we also used the framework of ECGW categories to prove an analog of the Gillet--Waldhausen theorem for chain complexes of finite sets and other basic combinatorial objects. This states that chain complexes of finite sets with weak equivalences given by suitably-defined quasi-isomorphisms have an equivalent K-theory space to finite sets themselves. We are in the process of editing this result into a separate paper.
+			</p>
+			
+			</br>
+			
+			
+		  </ul>
+		  
+		  
+		  <div id="higher"><h2> Higher categorical structures </h2></div>
+		  
 	      <p>
             I am interested in many different kinds of higher categorical structures, how they relate to each other, and constructions like enrichment that many of them support. When I say "higher categories" I mean any structure involving collections of cells in various shapes and algebraic operations for composing certain arrangements of those cells into a single cell. 
 		  </p>
+		  
+		  <ul>
+		  
+			<li> A Polynomial Construction of Nerves for Higher Categories. Joint with <a href="http://www.dspivak.net/" onclick="getOutboundLink('http://www.dspivak.net/'); return false;">David Spivak</a> (2024). 
+	          
+	          <a href="https://arxiv.org/abs/2405.13157" onclick="getOutboundLink('https://arxiv.org/abs/2405.13157'); return false;">[arXiv]</a>
+	        </li>
+			
+			<p>
+				Shows that the constructions of Lawvere theories and nerves for generalized higher categories arise naturally from the formal category theory of polynomial functors. Introduces "algebraic familial functors" and uses them to describe the free symmetric monoidal category monad on categories.
+			</p>
+			
+			</br>
+			
+            <li> Structures in Categories of Polynomials. Joint with <a href="http://www.dspivak.net/" onclick="getOutboundLink('http://www.dspivak.net/'); return false;">David Spivak</a> (2023). 
+	          
+	          <a href="https://arxiv.org/abs/2305.00167" onclick="getOutboundLink('https://arxiv.org/abs/2305.00167'); return false;">[arXiv]</a>
+	        </li>
+			
+			<p>
+				Constructs the monoidal category of polynomials in a category E with pullbacks, without restricting to locally cartesian closed categories or only cartesian morphisms of polynomials, analyzes its duoidal structure and various monoidal (co)closures, shows that its category of comonoids is equivalent to that of internal categories and cofunctors in E, and proves that coalgebras are equivalent to internal copresheaves. When E is the category of categories, this recovers the usual notion of copresheaves for a double category.
+			</p>
+			
+			</br>
+			
+            <li> Duoidal Structures for Compositional Dependence. Joint with <a href="http://www.dspivak.net/" onclick="getOutboundLink('http://www.dspivak.net/'); return false;">David Spivak</a> (2022). 
+	          
+	          <!--<a href="papers/spacetime.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'spacetime'});">[PDF]</a>-->
+	          <a href="https://arxiv.org/abs/2210.01962" onclick="getOutboundLink('https://arxiv.org/abs/2210.01962'); return false;">[arXiv]</a>
+	        </li>
+			
+			<p>
+				Analyzes the algebraic structure of "physical duoidal categories" consisting of two monoidal structures that can be thought of as one juxtaposing objects in space and the other in time. Shows that structure maps between algebraic expressions in such a category can be deduced from inclusions of finite "dependency" posets, which formally means that physical duoidal categories are algebras for a "categorical operad" of those posets. This gives a visual way of determining inequalities between different (potentially complicated) expressions involving max and + for a fixed collection of nonnegative real numbers. 
+			</p>
+			
+			</br>
+			
+            <li> Enrichment of Algebraic Higher Categories (2022).
+	          
+	          <!--<a href="papers/enrichment.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'enrichment'});">[PDF]</a>-->
+	          <a href="https://arxiv.org/abs/2205.12235" onclick="getOutboundLink('https://arxiv.org/abs/2205.12235'); return false;">[arXiv]</a>
+	        </li>
+			
+			<p>
+				Defines an even more general notion of enrichment for higher categories and explores what it looks like in examples of monoidal categories, double categories, and generalized multicategories, plus how it recovers existing notions of enrichment.
+			</p>
+			
+			</br>
+			
+            <li> PhD Thesis: <i>Shape Independent Category Theory</i> (2022).
+			
+			<a href="papers/thesis.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'thesis'});">[PDF]</a>
+	          
+			</li>
+			
+			<p>
+				Defines a general notion of enrichment for any type of higher category with a top-dimensional cell shape, and shows that enrichment forms a binary operation on higher category theories: just as enriching categories in n-categories gives (n+1)-categories, enriching type A higher categories in type B higher categories gives a new type of higher category in the sense of familial monads. Analyzes the cell shapes of nerves of higher categories and shows that those of enriched higher categories can be constructed as a generalized wreath product.
+			</p>
+			
+			</br>
+			
+			<li> Familial Monads as Higher Category Theories (2021). 
+	          
+	          <!--<a href="papers/familial.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'familial'});">[PDF]</a>-->
+	          <a href="https://arxiv.org/abs/2111.14796" onclick="getOutboundLink('https://arxiv.org/abs/2111.14796'); return false;">[arXiv]</a>
+	        </li>
+			
+			<p>
+				All of the commonly studied types of high- and low-dimensional algebraic categorical structures (n-categories, double categories, multicategories, etc.) fit the definition of "familial monad algebras," which are structures built out of cells of specified shapes where certain arrangements of cells can be composed into a single cell subject to various equations. Working out a concrete characterization of the data required to define a familial monad (using some convenient properties of category-valued polynomials) allows new types of higher categories to be defined without as much work each time. For instance, cubical n-categories are easily shown to be familial monad algebras.
+			</p>
+			
+			</br>
+			
+            
+		  </ul>
+
+
+		<div id="applied"><h2> Applied category theory </h2></div>
 			
 		  <!--
 			use the language of polynomial functors to describe common constructions across the various flavors of higher categories. For instance, n-categories are algebraic structures on n-globular sets, and n-tuple categories are algebraic structures on diagrams of cubical cells which keep track of the different directions. So far, I have generalized enrichment of categories to any such higher category. In infinite dimensions, these algebraic structures can be modeled as a homotopy theory for diagrams over certain more complicated categories, like &Theta;<sub>n</sub> or products of &Delta;. My work focuses on classifying these models and establishing analogues of features of ordinary category theory (such as enrichment) for higher category theories with more general cell shapes.
 		  -->
 		  
-		  <p>	
-			Algebraic K-theory describes how various types of objects are built up out of smaller pieces, where "smaller" is tracked by certain morphisms in a category. My work builds on an <a href="https://arxiv.org/abs/1811.08014" onclick="getOutboundLink('https://arxiv.org/abs/1811.08014'); return false;"><strong>axiomatic framework</strong></a> for K-theory which uses double categories to model a wide range of objects with two different ways of mapping a smaller object to a bigger one. 
-		  </p>
 		  
 		  <!--
 		    This approach generalizes classical theorems of K-theory to non-abelian settings, such as varieties and finite sets, where chain complex models of K-theory have yet to be fully explored. 
 		  -->
 		  
 		  <p>
-		    Double categories together with polynomial endofunctors on the category of sets provide a rich language for describing phenomena in both category theory and real-world applications. Polynomial coalgebras model "open" dynamical systems, where the state of the system updates based on external input, and double categories of decorated/structured cospans model scientific phenomena in a way that captures compositional structure.  
+		    Double categories together with polynomial endofunctors on the category of sets provide a rich language for describing phenomena in both category theory and real-world applications. Polynomial coalgebras model "open" dynamical systems, where the state of the system updates based on external input, and double categories of decorated/structured cospans model scientific phenomena in a way that captures compositional structure. Combinatorial spaces used in homotopy theory, namely simplicial sets, can be used to describe "partial evaluations" of algebraic expressions such as those from 1+2+3 to 3+3 or 1+5 on the way to the "total evaluation" of 6.
 		  </p>
 		  
-		  <p>
-		    Hyperbolic and Euclidean tilings of the plane provide beautiful examples of spaces built up out of cells of fixed shapes, similar to the decompositions of spaces common in geometric and algebraic topology. The categorical models of combinatorial spaces used in algebraic topology can also model tilings, but doing so requires choices of directions and labels that form a rich theory accessible to undergraduate researchers.
-		  </p>
+		  
 		  
 		  
 			
@@ -103,51 +254,18 @@
             As an undergrad I did research projects in polyhedral decompositions of manifolds, hyperbolic knot theory, formal languages for concurrent processes, and computational astrophysics of plasma jets and supernova neutrinos.
           </p>  -->
 		  
-		  <h2> Papers </h2>
-
+		  
           <ul>
-            <li> Categorical Tiling Theory: Constructing Directed Planar Tilings via Edge Reversal. Joint with Catherine DiLeo and Preston Sessoms.
-	          
-	          <!--<a href="papers/chain_complexes.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'chain-complexes'});">[PDF]</a>-->
-	          <a href="https://arxiv.org/abs/2509.06363" onclick="getOutboundLink('https://arxiv.org/abs/2509.06363'); return false;">[arXiv]</a>
-	        </li>
+            
 			
-			</br>
-			
-            <li> Additivity and Fiber Sequences for Combinatorial K-Theory. Joint with <a href="http://pi.math.cornell.edu/~maru/" onclick="getOutboundLink('http://pi.math.cornell.edu/~maru/'); return false;">Maru Sarazola</a>.
-	          
-	          <!--<a href="papers/chain_complexes.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'chain-complexes'});">[PDF]</a>-->
-	          <a href="https://arxiv.org/abs/2107.07701" onclick="getOutboundLink('https://arxiv.org/abs/2107.07701'); return false;">[arXiv]</a>
-	        </li>
-			
-			</br>
-			
-			<li> A combinatorial construction of homology via ACGW categories. Joint with <a href="http://pi.math.cornell.edu/~maru/" onclick="getOutboundLink('http://pi.math.cornell.edu/~maru/'); return false;">Maru Sarazola</a> and <a href="https://pi.math.cornell.edu/~zakh/" onclick="getOutboundLink('https://pi.math.cornell.edu/~zakh/'); return false;">Inna Zakharevich</a>.
-	          
-	          <!--<a href="papers/chain_complexes.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'chain-complexes'});">[PDF]</a>-->
-	          <a href="https://arxiv.org/abs/2107.07701" onclick="getOutboundLink('https://arxiv.org/abs/2107.07701'); return false;">[arXiv]</a>
-	        </li>
-			
-			</br>
-			
-            <li> All Concepts are Cat<sup>#</sup>. Joint with Owen Lynch and <a href="http://www.dspivak.net/" onclick="getOutboundLink('http://www.dspivak.net/'); return false;">David Spivak</a>. 
+            <li> All Concepts are Cat<sup>#</sup>. Joint with Owen Lynch and <a href="http://www.dspivak.net/" onclick="getOutboundLink('http://www.dspivak.net/'); return false;">David Spivak</a> (2024). 
 	          
 	          <a href="https://arxiv.org/abs/2305.02571" onclick="getOutboundLink('https://arxiv.org/abs/2305.02571'); return false;">[arXiv]</a>
 	        </li>
 			
-			</br>
-			
-            <li> A Polynomial Construction of Nerves for Higher Categories. Joint with <a href="http://www.dspivak.net/" onclick="getOutboundLink('http://www.dspivak.net/'); return false;">David Spivak</a>. 
-	          
-	          <a href="https://arxiv.org/abs/2405.13157" onclick="getOutboundLink('https://arxiv.org/abs/2405.13157'); return false;">[arXiv]</a>
-	        </li>
-			
-			</br>
-			
-            <li> Structures in Categories of Polynomials. Joint with <a href="http://www.dspivak.net/" onclick="getOutboundLink('http://www.dspivak.net/'); return false;">David Spivak</a>. 
-	          
-	          <a href="https://arxiv.org/abs/2305.00167" onclick="getOutboundLink('https://arxiv.org/abs/2305.00167'); return false;">[arXiv]</a>
-	        </li>
+			<p>
+				Shows that generalized polynomials, polynomial coalgebras (which model "open" dynamical systems like finite automata), and computational effects handlers all arise naturally from the formal category theory of polynomial functors encoded by the double category Cat<sup>#</sup>. This supports the hypothesis that Cat<sup>#</sup>, also known for describing categorical database theory and generalized higher categories, is a natural setting for lots of different constructions in pure and applied category theory.
+			</p>
 			
 			</br>
 			
@@ -156,39 +274,31 @@
 	          <a href="https://arxiv.org/abs/2301.01445" onclick="getOutboundLink('https://arxiv.org/abs/2301.01445'); return false;">[arXiv]</a>
 	        </li>
 			
-			</br>
-			
-            <li> Duoidal Structures for Compositional Dependence. Joint with <a href="http://www.dspivak.net/" onclick="getOutboundLink('http://www.dspivak.net/'); return false;">David Spivak</a>. 
-	          
-	          <!--<a href="papers/spacetime.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'spacetime'});">[PDF]</a>-->
-	          <a href="https://arxiv.org/abs/2210.01962" onclick="getOutboundLink('https://arxiv.org/abs/2210.01962'); return false;">[arXiv]</a>
-	        </li>
+			<p>
+				Describes "signed graphs" and "signed categories" as convenient formalisms for studying patterns in regulatory networks from systems biology. Constructs formal comparisons with the underlying chemical mechanisms governing interactions between cell protiens and the differential equations describing their evolving quantities. In other words, describes how mathematically to build complicated networks of interacting biological compounds in a way that respects the quantitative evolution of those compounds and makes it easy to describe their relationships.
+			</p>
 			
 			</br>
 			
-            <li> Dynamic Operads, Dynamic Categories: From Deep Learning to Prediction Markets. Joint with <a href="http://www.dspivak.net/" onclick="getOutboundLink('http://www.dspivak.net/'); return false;">David Spivak</a>. <i>Electronic Proceedings in Theoretical Computer Science,</i> 2022 (Applied Category Theory conference).
+            <li> A Dynamic Monoidal Category for Strategic Games. <a href="https://topos.site/blog/2022/09/a-dynamic-monoidal-category-for-strategic-games/" onclick="getOutboundLink('https://topos.site/blog/2022/09/a-dynamic-monoidal-category-for-strategic-games/'); return false;">[Blog post]</a>
+			  
+		    </li>
+
+			<p>
+				Describes an example of a dynamic monoidal category modeling strategic games.
+			</p>
+			
+			</br>
+			
+			<li> Dynamic Operads, Dynamic Categories: From Deep Learning to Prediction Markets. Joint with <a href="http://www.dspivak.net/" onclick="getOutboundLink('http://www.dspivak.net/'); return false;">David Spivak</a>. <i>Electronic Proceedings in Theoretical Computer Science,</i> 2022.
 	          
 	          <!--<a href="papers/adaptives.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'adaptives'});">[PDF]</a>-->
 	          <a href="https://arxiv.org/abs/2205.03906" onclick="getOutboundLink('https://arxiv.org/abs/2205.03906'); return false;">[arXiv]</a>
 	        </li>
 			
-			</br>
-			
-            </br>
-			
-            <li> Enrichment of Algebraic Higher Categories.
-	          
-	          <!--<a href="papers/enrichment.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'enrichment'});">[PDF]</a>-->
-	          <a href="https://arxiv.org/abs/2205.12235" onclick="getOutboundLink('https://arxiv.org/abs/2205.12235'); return false;">[arXiv]</a>
-	        </li>
-			
-			</br>
-			
-            <li> Familial Monads as Higher Category Theories. 
-	          
-	          <!--<a href="papers/familial.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'familial'});">[PDF]</a>-->
-	          <a href="https://arxiv.org/abs/2111.14796" onclick="getOutboundLink('https://arxiv.org/abs/2111.14796'); return false;">[arXiv]</a>
-	        </li>
+			<p>
+				Introduces dynamic operads and dynamic monoidal categories as higher categorical structures modeling composable systems which update their state based on external input, and describes examples based on prediction markets and gradient descent for machine learning.
+			</p>
 			
 			</br>
 			
@@ -198,6 +308,10 @@
 	          <a href="https://arxiv.org/abs/2009.07302" onclick="getOutboundLink('https://arxiv.org/abs/2009.07302'); return false;">[arXiv]</a>
 	        </li>
 			
+			<p>
+				Analyzes the combinatorial space of formal expressions for a particular type of algebraic structure, where paths correspond to partial evaluations of expressions. Shows that partial evaluations are not always composable and analyzes their higher-dimensional compositional properties when the algebraic structure is commutative monoids.
+			</p>
+			
             </br>
 			
             <li> Weak cartesian properties of simplicial sets. Joint with <a href="https://www.mansfield.ox.ac.uk/dr-carmen-constantin" onclick="getOutboundLink('https://www.mansfield.ox.ac.uk/dr-carmen-constantin'); return false;">Carmen Constantin</a>, <a href="http://perimeterinstitute.ca/personal/tfritz/" onclick="getOutboundLink('http://perimeterinstitute.ca/personal/tfritz/'); return false;">Tobias Fritz</a>, <a href="http://www.paoloperrone.org/" onclick="getOutboundLink('http://www.paoloperrone.org/'); return false;"> and Paolo Perrone</a>. <i>Journal of Homotopy and Related Structures</i>, 18, <b>477-520</b>, 2023.
@@ -206,31 +320,17 @@
 	          <a href="https://arxiv.org/abs/2105.04775" onclick="getOutboundLink('https://arxiv.org/abs/2105.04775'); return false;">[arXiv]</a>
 	        </li>
 			
+			<p>
+				Characterizes all pushout squares in the simplex category, and introduces several new lifting properties a simplicial set can satisfy. One of these lifting properties, "inner span completeness," is shown to be a directed analog of a property of simplicial complexes arising from relational database theory. These properties are used in the companion paper above to study partial evaluations.
+			</p>
+			
           </ul>
 		  
-		  <h2> Thesis </h2>
 		  
-		  <ul>
-		    <li> <i>Shape Independent Category Theory.</i> 
-			
-			<a href="papers/thesis.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'thesis'});">[PDF]</a>
-	          
-			  
-		    </li>
-		  </ul>
-		  
-		  <h2> Blog Posts </h2>
-		  
-		  <ul>
-		    <li> A Dynamic Monoidal Category for Strategic Games. <a href="https://topos.site/blog/2022/09/a-dynamic-monoidal-category-for-strategic-games/" onclick="getOutboundLink('https://topos.site/blog/2022/09/a-dynamic-monoidal-category-for-strategic-games/'); return false;">[Post]</a>
-			  
-		    </li>
-		  </ul>
-		  
-		  <h2> Talks </h2>
+		  <div id="talks"><h2> Talks </h2></div>
 
 	      <ul>
-			<li> Directed Tilings of the Euclidean and Hyperbolic Plane. MAA Spring 2025 DC-MD-VA Section Meeting, April 2025.
+			<li> Directed Tilings of the Euclidean and Hyperbolic Plane. <a href="http://sections.maa.org/mddcva/Spring2025MeetingSlides.php">MAA Spring 2025 DC-MD-VA Section Meeting</a>, April 2025.
 	          <a href="slides/maa25.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'maa25'});">[Animated Slides]</a> <a href="slides/maa25-reduced.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'maa25-reduced'});">[Less Animated Slides]</a>
             </li>
 		  
@@ -294,7 +394,7 @@
 		  
 	        </br>
 			
-            <li> Cubical omega-Categories and Cubical Theta.
+            <li> Cubical &#969 -Categories and Cubical Theta.
               <a href="https://www.msri.org/seminars/25037" onclick="getOutboundLink('https://www.msri.org/seminars/25037'); return false;"> Cubical Sets Seminar</a>, MSRI, May 2020.
 	          <a href="slides/cubes-theta-notes.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'cubes-theta-notes'});">[Notes]</a>
             </li>
@@ -316,13 +416,11 @@
           </ul>
 		  
           
-          <h2> Undergraduate Research </h2>
+          <div id="older"><h2> Projects I worked on as an undergraduate </h2></div>
 		  
-		  <!--<h3> Papers </h3>-->
+		  <h3> Papers </h3>
 		  
-		  Projects I worked on as an undergraduate.
-
-          <ul>
+		  <ul>
             <li> Densities of Hyperbolic Cusp Invariants. Joint with Colin Adams, Rose Kaplan-Kelly, Michael Moore, Shruthi Sridhar, and Joshua Wakefield. 
 	          <i> Proceedings of the American Mathematical Society.</i> Volume 146, Number 9, September 2018, Pages 4073–4089.
 	          <a href="papers/CuspDensityPaper.pdf" onclick="gtag('event', 'open', {'event_category': 'pdf','event_label': 'cusp-density-paper'});">[PDF]</a>
@@ -340,7 +438,7 @@
             </li>
           </ul>
 
-          <!--<h3> Talks </h3>
+          <h3> Talks </h3>
 
 	      <ul>
 	        <li> Density Constructions for Hyperbolic Link Invariants.
@@ -369,7 +467,7 @@
             </li>
           </ul>
           
-          <h3> Posters </h3>
+          <!--<h3> Posters </h3>
 
 	      <ul>
 	        <li> Cusp Invariants: Dense or Knot?.
